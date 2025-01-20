@@ -27,11 +27,11 @@ This is Part 1 of a multi-phase project. You will implement key features, collab
 
 ## **Tasks and Workflow**
 
-### **1. Fork the Repository**
-Start by forking the project repository. Make sure to also add the base repository as a remote. Hint: You want to setsthe base repository as the upstream remote.
+### **1. Fork the Repository - 10 points**
+Start by forking the project repository. Make sure to also add the base repository as a remote. Hint: You want to set the base repository as the upstream remote.
 
 
-### **2. Branch Workflow**
+### **2. Branch Workflow - 10 points**
 Each team member will work on a specific feature or item. You will have to make branches for each branch. It is up to your group on how the work will be divided up. For each branch, make the nescessary changes, commit your work, and push your branch to the remote repository. 
 
 By the end there should be 4 extra branches that have the names:
@@ -40,7 +40,7 @@ By the end there should be 4 extra branches that have the names:
 * `feature/game_board`
 * `feature/item`
 
-### **3. Implement Features**
+### **3. Implement Features* - 10 points*
 You will find  files for the following components in the repository:
 
 - **game_board.py**: Manage the game grid.
@@ -49,14 +49,14 @@ You will find  files for the following components in the repository:
 - **item.py**: Manage items (e.g., dots, power pellets).
 Uncomment the code and fill in the TODO sections of the code to implement your assigned feature. Remeber, each feature belongs to a specific branch. If you accidentally update the wrong branch with a certain feature, it is up to you to maintain a clean git history and fix that mistake.
 
-### **4. Write Tests**
-Write tests for your code in the corresponding test file (e.g., test_player.py for player.py):
+### **4. Write Tests - 25 points**
+Write tests for your code in the corresponding test file (e.g., test_player.py for player.py). Be as thorough as possible with your testing. The more thorough you are, the more points you will recieve.
 
 Use the pytest framework for writing tests.
-Ensure your tests cover edge cases and possible errors. If you find an error, make sure to create a issue in GitHub about it in the base repo. 
+Ensure your tests cover edge cases and possible errors. If you find an error, make sure to create a issue in GitHub about it in the base repo. Every team must report at minimum 1 bug and give a correct test case associated with it to show where the code fails. Team that finds the most bugs (with test cases) will recieve 10 bonus points for this assignment.
 
 
-### **5. GitHub Actions Workflow**
+### **5. GitHub Actions Workflow - 25 points**
 The project uses GitHub Actions for continuous integration. You will make a CI file `.github/workflows/ci.yml`, and you need to fill it in to make it functional. 
 
 Your Goals:
@@ -115,7 +115,8 @@ Your Goals:
     * The commands for installing dependencies and running tests are provided, but your focus is on writing the correct workflow structure in the YML file.
     * Make sure the pipeline runs in the right order and follows best practices for CI configuration.
 
-### **6. Collaborate Using Pull Requests**
+### **6. Collaborate Using Pull Requests - 20 points**
+Follow the following steps to ensure a clean main branch with proper practices:
 1. Push your branch to the remote repository.
 2. Submit a pull request (PR) to merge your branch into main.
 3. Assign a reviewer from your team to review your code.
