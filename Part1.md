@@ -40,7 +40,7 @@ By the end there should be 4 extra branches that have the names:
 * `feature/game_board`
 * `feature/item`
 
-### **3. Implement Features* - 10 points*
+### **3. Implement Features* - 10 points**
 You will find  files for the following components in the repository:
 
 - **game_board.py**: Manage the game grid.
@@ -56,66 +56,8 @@ Use the pytest framework for writing tests.
 Ensure your tests cover edge cases and possible errors. If you find an error, make sure to create a issue in GitHub about it in the base repo. Every team must report at minimum 1 bug and give a correct test case associated with it to show where the code fails. Team that finds the most bugs (with test cases) will recieve 10 bonus points for this assignment.
 
 
-### **5. GitHub Actions Workflow - 25 points**
-The project uses GitHub Actions for continuous integration. You will make a CI file `.github/workflows/ci.yml`, and you need to fill it in to make it functional. 
 
-Your Goals:
-1. **Triggering Events**
-    * The workflow should run in response to the following events:
-        * **Push**: When code is pushed to the main branch.
-        * **Pull Request**: When a pull request is opened that targets the main branch.
-2. **Job Setup**
-    * The job should run on an `ubuntu-latest` runner.
-    * Run the job for Python 3.10
-
-3. **Steps**
-    1. Checkout the Code
-        * Use the `actions/checkout` action to check out the repository's code.
-
-    2. Setup Python Environment
-        * Use the `actions/setup-python` action to set up the Python version
-    3. Install System Dependencies
-        * Install the following system dependencies:
-            1. **python3-pygame**: A library used for game development in Python.
-            2. **xvfb**: A virtual framebuffer required for running tests in a headless environment.
-        ```bash
-        sudo apt-get update
-        sudo apt-get install -y python3-pygame
-        sudo apt-get install -y xvfb
-        ```
-    4. Install Python Dependencies
-        ```bash
-        python -m pip install --upgrade pip
-        pip install pytest
-        pip install pytest-cov
-        pip install flake8
-        pip install black
-        pip install pygame
-        ```
-    5. Check Code Formatting with Black
-        * If the code is not properly formatted, it should fail the CI run and display the differences
-        ```bash
-        black --check --diff .
-        ```
-    6. Lint the Code with Flake8
-        * Run flake8 to check for Python syntax errors and undefined names. Ensure the build fails if any critical issues are found. Additionally, run flake8 again with more lenient rules to check for complexity, line length, and general style.
-        ```bash
-        # stop the build if there are Python syntax errors or undefined names
-        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-        # exit-zero treats all errors as warnings
-        flake8 . --count --exit-zero --max-complexity=30 --max-line-length=100 --statistics
-        ```
-    7. Run tests with pytest
-        * Use pytest to run the tests and generate a coverage report in XML format. Since the project involves graphical elements, use xvfb-run to run the tests in a virtual framebuffer, ensuring the tests can be executed in a headless environment.
-        ```bash
-        xvfb-run -a pytest --cov=./ --cov-report=xml
-        ```
-
-    **Notes**
-    * The commands for installing dependencies and running tests are provided, but your focus is on writing the correct workflow structure in the YML file.
-    * Make sure the pipeline runs in the right order and follows best practices for CI configuration.
-
-### **6. Collaborate Using Pull Requests - 20 points**
+### **5. Collaborate Using Pull Requests - 20 points**
 Follow the following steps to ensure a clean main branch with proper practices:
 1. Push your branch to the remote repository.
 2. Submit a pull request (PR) to merge your branch into main.
