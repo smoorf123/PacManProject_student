@@ -12,7 +12,8 @@ In Part 2 of the Pac-Man Project, you will work with your team to implement upda
 1. **Rename components and implement updates**
 2. **Rebase your branches**
 3. **Sensitive Information Handling**
-4. **Pull requests and code reviews** 
+4. **Write a working CI/CD pipeline to automate testing**
+5. **Pull requests and code reviews** 
 
 ---
 
