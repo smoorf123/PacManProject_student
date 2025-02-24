@@ -13,10 +13,12 @@ In this project, you will implement features of the classic Pac-Man game using P
 - Git
 - pip (Python package installer)
 
+
 ### Windows Setup
 
 1. Clone the repository:
 ```bash
+# Make sure you clone the forked version. Instructions in Part1.md
 git clone <repository_url>
 cd PacManProject
 ```
@@ -42,6 +44,7 @@ pip install -r requirements.txt
 
 1. Clone the repository:
 ```bash
+# Make sure you clone the forked version. Instructions in Part1.md
 git clone <repository_url>
 cd PacManProject
 ```
