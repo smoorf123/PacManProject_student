@@ -1,6 +1,6 @@
 # Contributions:
 
-Somil (leader): Implemented item branch and tests and setup fork
+Somil (leader): Implemented item branch and tests and setup fork; implemented CI/CD Pipelilne
 
 Mateo (player): Implemented the player branch and awaiting PR approval
 
