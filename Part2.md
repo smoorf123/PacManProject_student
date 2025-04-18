@@ -20,7 +20,7 @@ In Part 2 of the Pac-Man Project, you will work with your team to implement upda
 ## **Steps for Part 2**
 
 ### **1. Update and Rename Components - 20 points**
-Uh oh, we forgot that player should actually be named Pacman. Rename all appropriate files, branches, code, and dependencies to reflect this name change. Ensure you maintain a clean Git history in this process.
+Uh oh, we forgot that Pacman should actually be named Pacman. Rename all appropriate files, branches, code, and dependencies to reflect this name change. Ensure you maintain a clean Git history in this process.
 
 ### **2. Rebase your branches - 30 points**
 In the past week we've found numerous bugs (thanks to your help!) from the original codebase and squashed them. Rebase your repository so that your game is also (mostly) bug free! **Hint**: This is why it was important to set the base repository as the upstream remote. Ensure you maintain a clean Git history in this process.
