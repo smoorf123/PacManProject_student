@@ -42,7 +42,11 @@ Steps for branching:
 ### **3. Implement Features (10 points)**
 You will find corresponding files for each component in the repository:
 - **game_board.py**: Manages the game grid.
+<<<<<<< HEAD
 - **pacman.py**: Implements Pac-Man's movement and interactions.
+=======
+- **player.py**: Implements Pac-Man's movement and interactions.
+>>>>>>> refs/remotes/origin/main
 - **ghost.py**: Handles ghost behavior and movement.
 - **item.py**: Manages items such as dots and power pellets.
 
